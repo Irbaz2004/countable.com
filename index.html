@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Count@ble.com</title>
+</head>
+<style>
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
+    background-color: cadetblue;
+  }
+
+  ::-webkit-scrollbar {
+    /* height: 20px; */
+    width: 15px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 1px 1px 25px black;
+    border-radius: 80px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 80px;
+  }
+
+.modal-content{
+  background-color: black;
+  color: white;
+}
+
+
+
+  #eo {
+    margin-left: 5%;
+    border: 1px solid white;
+  }
+
+  #num {
+    margin-left: 21%;
+    border: 1px solid black;
+  }
+
+
+  #ls {
+    margin-top: 20%;
+    margin-left: -50%;
+    border: 1px solid white;
+  }
+
+  #fir {
+    margin-left: 4%;
+    border: 1px solid black;
+  }
+
+  #sec {
+    margin-left: 7%;
+    border: 1px solid black;
+  }
+
+
+
+  #mus {
+    margin-left: 5%;
+    border: 1px solid white;
+  }
+
+  #add {
+    margin-left: 21%;
+    border: 1px solid black;
+  }
+
+
+
+
+  #text{
+
+    margin-left: 21%;
+    border: 1px solid black;
+  }
+  #cs{
+    
+    margin-left: 5%;
+    border: 1px solid white;
+  }
+
+
+
+  #check{
+
+    margin-left: 21%;
+    border: 1px solid black;
+  }
+  #pal{
+
+    margin-left: 5%;
+    border: 1px solid white;
+  }
+
+
+  #tup{
+
+    margin-left: 5%;
+    border: 1px solid white;
+  }
+  #upr{
+
+    margin-left: 21%;
+    border: 1px solid black;
+  }
+</style>
+
+<body>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb p-3 bg-dark ">
+
+      <li class="breadcrumb-item"><a href="#">Count@ble.com</a></li>
+      <!-- <li class="breadcrumb-item"><a href="#">Home</a></li> -->
+    </ol>
+  </nav>
+  <div class="container">
+
+    <h2 class="text-center">Using if else statment</h2>
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">TO check EVEN or ODD.</h5>
+            <p class="card-text">Checing the number is even or odd.</p>
+            <a href="https://jsfiddle.net/irbaz/2dgfLrhm/2/"target="_blank" class="btn btn-dark">CHECK CODE</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              TRY NOW
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">''
+                <div class="modal-content">
+                  <h3 class="text-center">ODD OR EVEN</h3>
+                  <div class="modal-header ">
+                    <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+
+
+
+                    <input type="number" placeholder="Enter the number" id="num">
+                    <button onclick="check()" type="button" class="btn btn-outline-success" id="eo">CHECK</button>
+
+
+
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>OUTPUT:</p>
+                    <p id="out"></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">LARGER between two number.</h5>
+            <p class="card-text">Checing which number greater between two number. </p>
+            <a href="https://jsfiddle.net/irbaz/2dgfLrhm/6/"target="_blank" class="btn btn-dark">CHECK CODE</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#lar">
+              TRY NOW
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="lar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+
+                <div class="modal-content">
+                  <br>
+                  <h4 class="text-center">LARGE NUMBER BETWEEN TWO NUMBER </h4>
+                  <div class="modal-header">
+
+                    <br>
+                    <input type="number" placeholder="Enter First number" id="fir">
+
+                    <input type="number" placeholder="Enter second number" id="sec">
+                    <button onclick="big()" type="button" class="btn btn-outline-success" id="ls">CHECK</button>
+
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>OUTPUT:</p>
+                    <p id="b"></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <h2 class="text-center">Using loop</h2>
+    <br><br>
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">SUM of numbers.</h5>
+          <p class="card-text">Using the loop sum the all numbers.</p>
+
+          <a href="https://jsfiddle.net/irbaz/2dgfLrhm/9/"target="_blank" class="btn btn-dark">CHECK CODE</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#s">
+            TRY NOW
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="s" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <h4 class="text-center">SUM OF NUMBERS:</h4>
+                <div class="modal-header">
+
+
+                  <br>
+                  <input type="number" placeholder="Enter the number" id="add">
+                  <button onclick="sum()" type="button" class="btn btn-outline-success" id="mus">CHECK</button>
+
+
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>RESULT:</p>
+                  <p id="re"></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">String to Character.</h5>
+          <p class="card-text">Using loop converting the string into character.</p>
+          <a href="https://jsfiddle.net/irbaz/2dgfLrhm/13/"target="_blank" class="btn btn-dark">CHECK CODE</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#sc">
+            TRY NOW
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="sc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <h4 class="text-center">STRING TO CHARACTER</h4>
+                <div class="modal-header">
+
+                  <br>
+                  <input type="text" placeholder="Enter the text" id="text">
+                  <button onclick="st()" type="button" class="btn btn-outline-success"id="cs">CONVERT</button>
+
+
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>OUTPUT:</p>
+                  <p id="sr"></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Palindrome</h5>
+          <p class="card-text">To check PAlINDROME.</p>
+          <a href="https://jsfiddle.net/irbaz/2dgfLrhm/15/"target="_blank" class="btn btn-dark">CHECK CODE</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#pl">
+            TRY NOW
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="pl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <h4 class="text-center">TO CHECK PALINDROME</h4>
+                <div class="modal-header">
+
+                  <br>
+                  <input type="text" name="" id="check" placeholder="Enter here....">
+                  <button onclick="pali()" type="button" class="btn btn-outline-success"id="pal">CHECK</button>
+
+
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>RESULT:</p>
+                  <p id="res"></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="card" style="width: 70rem;">
+      <div class="card-body">
+        <h5 class="card-title">String convert to UPPERCASE.</h5>
+        <p class="card-text">Using loop converting the string into Uppercase.</p>
+        <a href="https://jsfiddle.net/irbaz/2dgfLrhm/20/"target="_blank" class="btn btn-dark">CHECK CODE</a>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#u">
+          TRY NOW
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="u" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <h4 class="text-center">String To UPPERcase</h4>
+              <div class="modal-header">
+
+                <br>
+                <input type="text" name="" id="upr" placeholder="Enter the String">
+                <button onclick="upp()" type="button" class="btn btn-outline-success"id="tup">Convert</button>
+
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>RESULT:</p>
+                <p id="data"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Count@ble.com, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <script>
+    function check() {
+      let find = document.getElementById("num").value;
+      if (find % 2 == 0) {
+        document.getElementById("out").innerText = `${find}  is EVEN number`;
+      }
+      else {
+        document.getElementById("out").innerText = `${find}  is ODD number`;
+      }
+    }
+
+
+
+    function big() {
+      let one = document.getElementById("fir").value;
+      let two = document.getElementById("sec").value;
+
+      if (one > two) {
+        document.getElementById("b").innerText = `${one} is GREATER than ${two}`;
+      }
+      else if (one < two) {
+        document.getElementById("b").innerText = `${one} is LESSER than ${two}`;
+      }
+      else if (one == two) {
+        document.getElementById("b").innerText = `${one} are EQUAL ${two}`;
+      }
+
+      else {
+        document.getElementById("b").innerText = "Enter the number";
+      }
+    }
+
+
+    function sum() {
+      let i;
+      let sum = 0;
+      let n = document.getElementById("add").value;
+
+      for (i = 1; i <= n; i++) {
+        sum = i + sum;
+      }
+
+      document.getElementById('re').innerText = `SUM OF ${n}  IS  =${sum}`
+
+    }
+
+    function st() {
+
+      let data = document.getElementById("text").value;
+      let last = '';
+      for (let i = 0; i < data.length; i++) {
+        last += `'${data[i]}'`
+        document.getElementById("sr").innerHTML = last
+      }
+    }
+
+
+
+
+    function upp() {
+      let str = document.getElementById("upr").value;
+      let arr = str.split(',');
+
+      for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].trim().toUpperCase();
+      }
+
+      document.getElementById("data").innerHTML = arr
+    }
+
+
+    function pali() {
+      let data = document.getElementById("check").value.toLowerCase();
+
+      let palin = true;
+      for (let i = 0; i < Math.floor(data.length / 2); i++) {
+        if (data[i] !== data[data.length - 1 - i]) {
+          palin = false;
+          break;
+        }
+      }
+      if (palin) {
+        document.getElementById("res").innerHTML = "This is a palindrome.";
+      } else {
+        document.getElementById("res").innerHTML = "This is not a palindrome.";
+      }
+    }
+  </script>
+</body>
+
+</html>
